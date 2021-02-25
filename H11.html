@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test  js switch and case</h1>
+    <p>Синтаксис Конструкция switch имеет один или более блок case и необязательный блок default.</p>
+    <center>
+<select name="" id="" onclick="s01(this)">
+<option >Porshe</option>
+<option >Mercedes</option>
+<option >Kamaz</option>
+<option >Future</option>
+</select>
+   <br><br><br><br><br><br>
+    <div id=d1></div>
+    </center>
+    <script>
+        function s01(obj){
+        console.log(obj.value);    
+switch(obj.value){
+case'Porshe': document.getElementById('d1').innerHTML="<img src='Porshe.jpg' width='300' />"; break;
+case'Mercedes':document.getElementById('d1').innerHTML="<img src='Mercedes.jpg' width='300' />"; break;
+case'Kamaz':document.getElementById('d1').innerHTML="<img src='Kamaz.jpg' width='300' />"; break;
+      default:document.getElementById('d1').innerHTML="<img src='инфинити.jpg' width='300' />"; break; 
+}
+    }
+        </script>
+    </body>
+
+</html>
